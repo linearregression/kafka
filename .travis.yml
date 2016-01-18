@@ -12,6 +12,8 @@ install: "true"
 before_script:
    - gradle -v
 script: 
+   - gradle --debug
+
 jdk:
 - openjdk7
 scala:
