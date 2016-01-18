@@ -21,7 +21,7 @@ scala:
 
 script: 
    - gradle --info
-   - ./gradlew --quiet test
+   - ./gradlew --parallel --stacktrace --quiet test
 
 branches:
   only:
