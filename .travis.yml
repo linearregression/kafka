@@ -12,8 +12,6 @@ install: "true"
 before_script:
    - gradle -v
    - chmod +x gradlew
-script: 
-   - gradle --debug
 
 jdk:
 - openjdk7
@@ -24,11 +22,11 @@ matrix:
   include:
   - jdk: oraclejdk7
     script: 
-        - ./gradle
+        - ./gradle --debug
         - ./gradlew test
   - jdk: oraclejdk8
     script: 
-        - ./gradle
+        - ./gradle --debug
         - ./gradlew test
 
 branches:
