@@ -11,6 +11,7 @@ install: "true"
 
 before_script:
    - gradle -v
+   - chmod +x gradlew
 script: 
    - gradle --debug
 
