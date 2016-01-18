@@ -9,7 +9,7 @@ cache:
 
 install: "true"
 
-before-script:
+before_script:
    - gradle -v
 script: 
 jdk:
