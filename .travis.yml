@@ -21,7 +21,7 @@ scala:
 
 script: 
    - gradle --debug
-   - gradlew --debug test
+   - ./gradlew --debug test
 
 branches:
   only:
