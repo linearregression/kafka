@@ -1,5 +1,7 @@
 Apache Kafka
 =================
+[![Build Status](https://travis-ci.org/linearregression/kafka.svg?branch=master)](https://travis-ci.org/linearregression/kafka)
+
 See our [web site](http://kafka.apache.org) for details on the project.
 
 You need to have [gradle](http://www.gradle.org/installation) installed.
@@ -11,7 +13,7 @@ You need to have [gradle](http://www.gradle.org/installation) installed.
 Now everything else will work
 
 ### Building a jar and running it ###
-    ./gradlew jar  
+    ./gradlew jar
 
 Follow instuctions in http://kafka.apache.org/documentation.html#quickstart
 
