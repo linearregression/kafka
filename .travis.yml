@@ -32,7 +32,7 @@ scala:
 
 script: 
    - gradle --info
-   - ./gradlew -Xlint:deprecation --quiet test
+   - ./gradlew --quiet test
 
 branches:
   only:
