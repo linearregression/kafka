@@ -1,0 +1,37 @@
+sudo: false
+language: java
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+install: "true"
+
+before-script:
+- openjdk7
+script: 
+jdk:
+- openjdk7
+scala:
+   - 2.11.2
+
+matrix:
+  include:
+  - jdk: oraclejdk7
+    script: 
+        - ./gradle
+        - ./gradlew test
+  - jdk: oraclejdk8
+    script: 
+        - ./gradle
+        - ./gradlew test
+
+branches:
+  only:
+  - 0.9.0
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
