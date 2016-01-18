@@ -10,7 +10,7 @@ cache:
 install: "true"
 
 before-script:
-- openjdk7
+   - gradle -v
 script: 
 jdk:
 - openjdk7
