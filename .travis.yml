@@ -21,7 +21,7 @@ scala:
 
 script: 
    - gradle --info
-   - ./gradlew --info test
+   - ./gradlew --error test
 
 branches:
   only:
