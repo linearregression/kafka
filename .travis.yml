@@ -20,8 +20,8 @@ scala:
    - 2.11.2
 
 script: 
-   - gradle --debug
-   - ./gradlew --debug test
+   - gradle --info
+   - ./gradlew --info test
 
 branches:
   only:
