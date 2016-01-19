@@ -33,6 +33,11 @@ allprojects {
   repositories {
     mavenCentral()
   }
+  gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+         options.compilerArgs << "-Xlint:deprecation"
+    }
+  }
 }
 
 ext {
@@ -65,11 +70,13 @@ if (new File('.git').exists()) {
     // And some of the files that we have checked in should also be excluded from this check
     excludes.addAll([
         '**/.git/**',
+        '**/log/**',
         '**/build/**',
         'CONTRIBUTING.md',
         'gradlew',
         'gradlew.bat',
-        '**/README.md'
+        '**/README.md',
+        '**/.travis.yml'
     ])
   }
 }

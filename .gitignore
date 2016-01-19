@@ -18,6 +18,7 @@ patch-process/*
 .#*
 rat.out
 TAGS
+*.*~
 *.iml
 .project
 .settings
